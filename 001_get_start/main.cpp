@@ -4,6 +4,8 @@
     In this chapter, we must know:
     
     - how to complie and debug C++ code in the VS CODE ?
+      
+      The key is to write 'task.json' and 'launch.json' for debug
 
     - how to write the CMAKELists file ?
 

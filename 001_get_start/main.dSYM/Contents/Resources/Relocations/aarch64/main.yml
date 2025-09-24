@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/hangyu/Documents/GitHub/cpp/001_get_start/main'
+relocations:     []
+...
