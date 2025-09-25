@@ -5,7 +5,7 @@
     
     - 如何在 VS CODE 中编译和调试 C++ code ?
       
-      关键是要修改 'task.json' and 'launch.json' 文件
+      关键是要修改 'launch.json' 文件
 
     - 如何编写 CMAKELists 文件 ?
 
@@ -14,8 +14,10 @@
 
 #include <iostream>
 
+void Log(const char *message);
+
 int main()
 {
-    std::cout << "Hello World!" << std::endl;
-    return 0;
+    Log("Hello World!");
+    std::cin.get();
 }

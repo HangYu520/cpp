@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/Users/hangyu/Documents/GitHub/cpp/build",
-  "command": "/usr/bin/clang++   -g -arch arm64 -o CMakeFiles/main.dir/main.cpp.o -c /Users/hangyu/Documents/GitHub/cpp/001_get_start/main.cpp",
-  "file": "/Users/hangyu/Documents/GitHub/cpp/001_get_start/main.cpp",
-  "output": "CMakeFiles/main.dir/main.cpp.o"
-}
-]
