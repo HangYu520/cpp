@@ -1,15 +1,15 @@
 /* 
-    The C++ coding environment: VS CODE + GCC + CMake
+    C++ 编程环境: VS CODE + GCC + CMake
 
-    In this chapter, we must know:
+    本节中, 需要知道:
     
-    - how to complie and debug C++ code in the VS CODE ?
+    - 如何在 VS CODE 中编译和调试 C++ code ?
       
-      The key is to write 'task.json' and 'launch.json' for debug
+      关键是要修改 'task.json' and 'launch.json' 文件
 
-    - how to write the CMAKELists file ?
+    - 如何编写 CMAKELists 文件 ?
 
-      see https://blog.csdn.net/iuu77/article/details/129229361 for more details
+      详见 https://blog.csdn.net/iuu77/article/details/129229361
 */
 
 #include <iostream>
