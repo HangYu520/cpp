@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.11)
 
 # 项目名
-project(001_get_start)
+project(001_get_started)
 
 # 获取目录下所有源文件并存在 SRC_LIST 中
 aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_LIST)
