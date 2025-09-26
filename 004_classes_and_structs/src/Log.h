@@ -4,12 +4,9 @@
 class Log
 {
 public:
-    enum Level
-    {
-        ERROR = 0,
-        WARNING = 1,
-        INFO = 2
-    };
+    const int ERROR = 0;
+    const int WARNING = 1;
+    const int INFO = 2;
 
 private:
     int m_LogLevel = INFO;

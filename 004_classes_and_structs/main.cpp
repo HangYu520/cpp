@@ -48,6 +48,5 @@ int main()
     LOG("x:"<< v1.x << ", y:"<< v1.y);
 
     Log log;
-    log.SetLevel(Log::WARNING);
     log.Info("This is an info message");
 }
