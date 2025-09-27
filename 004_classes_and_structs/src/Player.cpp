@@ -1,19 +1,19 @@
 #include "Player.h"
 
-Player::Player(int xa, int ya, int speeda)
+Player::Player(int x, int y, const char* name)
 {
-    x = xa;
-    y = ya;
-    speed = speeda;
+    X = x;
+    Y = y;
+    Name = name;
+    std::cout << "Created player !" << std::endl;
 }
 
-void Player::move(int xa, int ya)
+Player::~Player()
 {
-    x += xa * speed;
-    y += ya * speed;
+    std::cout << "Destroyed player !" << std::endl;
 }
 
 void Player::log()
 {
-    LOG("Player: " << x << ", " << y);
+    LOG("Player " << Name << " is at (" << X << ", " << Y << ")");
 }

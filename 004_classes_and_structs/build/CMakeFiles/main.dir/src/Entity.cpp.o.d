@@ -1,6 +1,6 @@
-CMakeFiles/main.dir/main.cpp.o: \
-  /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/main.cpp \
-  /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Player.h \
+CMakeFiles/main.dir/src/Entity.cpp.o: \
+  /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Entity.cpp \
+  /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Entity.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config_site \
@@ -784,6 +784,4 @@ CMakeFiles/main.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stack \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/stack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/print \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h \
-  /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Entity.h \
-  /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Log.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h

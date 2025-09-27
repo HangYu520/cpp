@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "/Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/bin/main.pdb"
   "CMakeFiles/main.dir/main.cpp.o"
   "CMakeFiles/main.dir/main.cpp.o.d"
+  "CMakeFiles/main.dir/src/Entity.cpp.o"
+  "CMakeFiles/main.dir/src/Entity.cpp.o.d"
   "CMakeFiles/main.dir/src/Log.cpp.o"
   "CMakeFiles/main.dir/src/Log.cpp.o.d"
   "CMakeFiles/main.dir/src/Player.cpp.o"

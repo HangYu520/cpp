@@ -1,0 +1,1 @@
+static int s_variable = 5; // 仅 Static.cpp 可见

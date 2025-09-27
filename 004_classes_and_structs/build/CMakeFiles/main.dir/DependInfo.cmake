@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
+  "/Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Entity.cpp" "CMakeFiles/main.dir/src/Entity.cpp.o" "gcc" "CMakeFiles/main.dir/src/Entity.cpp.o.d"
   "/Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Log.cpp" "CMakeFiles/main.dir/src/Log.cpp.o" "gcc" "CMakeFiles/main.dir/src/Log.cpp.o.d"
   "/Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Player.cpp" "CMakeFiles/main.dir/src/Player.cpp.o" "gcc" "CMakeFiles/main.dir/src/Player.cpp.o.d"
   )

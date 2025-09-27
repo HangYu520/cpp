@@ -86,10 +86,24 @@ CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
+CMakeFiles/main.dir/src/Entity.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/Entity.cpp.o: /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Entity.cpp
+CMakeFiles/main.dir/src/Entity.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/Entity.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Entity.cpp.o -MF CMakeFiles/main.dir/src/Entity.cpp.o.d -o CMakeFiles/main.dir/src/Entity.cpp.o -c /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Entity.cpp
+
+CMakeFiles/main.dir/src/Entity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Entity.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Entity.cpp > CMakeFiles/main.dir/src/Entity.cpp.i
+
+CMakeFiles/main.dir/src/Entity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Entity.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Entity.cpp -o CMakeFiles/main.dir/src/Entity.cpp.s
+
 CMakeFiles/main.dir/src/Log.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Log.cpp.o: /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Log.cpp
 CMakeFiles/main.dir/src/Log.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/Log.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/Log.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Log.cpp.o -MF CMakeFiles/main.dir/src/Log.cpp.o.d -o CMakeFiles/main.dir/src/Log.cpp.o -c /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Log.cpp
 
 CMakeFiles/main.dir/src/Log.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/main.dir/src/Log.cpp.s: cmake_force
 CMakeFiles/main.dir/src/Player.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Player.cpp.o: /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Player.cpp
 CMakeFiles/main.dir/src/Player.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/Player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Player.cpp.o -MF CMakeFiles/main.dir/src/Player.cpp.o.d -o CMakeFiles/main.dir/src/Player.cpp.o -c /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/src/Player.cpp
 
 CMakeFiles/main.dir/src/Player.cpp.i: cmake_force
@@ -117,6 +131,7 @@ CMakeFiles/main.dir/src/Player.cpp.s: cmake_force
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
+"CMakeFiles/main.dir/src/Entity.cpp.o" \
 "CMakeFiles/main.dir/src/Log.cpp.o" \
 "CMakeFiles/main.dir/src/Player.cpp.o"
 
@@ -124,11 +139,12 @@ main_OBJECTS = \
 main_EXTERNAL_OBJECTS =
 
 /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/bin/main: CMakeFiles/main.dir/main.cpp.o
+/Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/bin/main: CMakeFiles/main.dir/src/Entity.cpp.o
 /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/bin/main: CMakeFiles/main.dir/src/Log.cpp.o
 /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/bin/main: CMakeFiles/main.dir/src/Player.cpp.o
 /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/bin/main: CMakeFiles/main.dir/build.make
 /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/bin/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/bin/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable /Users/hangyu/Documents/GitHub/cpp/004_classes_and_structs/bin/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

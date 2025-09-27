@@ -1,18 +1,17 @@
 #pragma once
 #include <iostream>
+#include "Entity.h"
 #define LOG(x) std::cout << x << std::endl
 
-class Player
+class Player : public Entity
 {
-private:
-    int x, y;
-    int speed;
+public:
+    const char* Name; // 指向的内容不可修改，指针本身可以修改
 
 public:
-    Player(int xa, int ya, int speeda);
-    ~Player(){};
-    
-    void move(int xa, int ya);
+    Player(int x, int y, const char* name);
+   
+    ~Player();
     
     void log();
 };
