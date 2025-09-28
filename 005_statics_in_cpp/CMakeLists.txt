@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.11)
 
-project(005_statics)
+project(005_statics_in_cpp)
 
 aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_LIST)
 
