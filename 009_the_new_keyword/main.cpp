@@ -8,6 +8,8 @@
     
     - 和 malloc() 的区别
       new 创建对象, malloc 创建内存, 不会调用构造函数
+    
+    new 和 delete 的本质是运算符，支持重载
 */
 
 #include <iostream>
