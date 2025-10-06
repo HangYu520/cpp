@@ -1,0 +1,2 @@
+/usr/bin/ar qc /Users/hangyu/Documents/GitHub/cpp/014_libraries_linking/lib/libLog.a CMakeFiles/Log.dir/src/Log.cpp.o
+/usr/bin/ranlib /Users/hangyu/Documents/GitHub/cpp/014_libraries_linking/lib/libLog.a
