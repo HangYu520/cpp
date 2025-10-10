@@ -33,7 +33,7 @@ class Shape
 public:
     Shape(){};
 
-    ~Shape(){};
+    virtual ~Shape(){}; // 定义虚析构函数
 
     virtual void Draw() = 0; //子类必须实现
 };
