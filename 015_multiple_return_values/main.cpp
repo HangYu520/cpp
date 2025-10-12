@@ -15,6 +15,10 @@
     - std::pair 存放两个变量
       头文件 #include <utility>
 
+    - 结构化绑定
+      C++ 17 引入了结构化绑定，可以不使用 std::get 获取 tuple 中的元素
+      语法：auto [a, b] = func(); 直接获取
+
     - 以结构体打包返回多个变量
 
     更推荐以结构体打包返回，因为可以命名变量，更清晰
@@ -68,8 +72,8 @@ int main()
     area_perimeter1(radius, area, perimeter);
     print(std::format("area: {}, perimeter: {}", area, perimeter));
 
-    auto circle_tuple = area_perimeter2(radius); // 使用自动推断类型 auto
-    print(std::format("area: {}, perimeter: {}", std::get<0>(circle_tuple), std::get<1>(circle_tuple)));
+    auto [area, perimeter] = area_perimeter2(radius); // 使用结构化绑定
+    print(std::format("area: {}, perimeter: {}", area, perimeter));
 
     auto circle_pair = area_perimeter3(radius);
     print(std::format("area: {}, perimeter: {}", circle_pair.first, circle_pair.second));
