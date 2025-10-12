@@ -1,9 +1,11 @@
 /*
-    C++ 多线程并行、互斥锁
+    C++ 多线程并行、互斥锁、std::async 等概念
 
     多线程属于非常高级的概念, 这里只标上参考资料:
 
     https://immortalqx.github.io/tags/
+
+    Cherno Youtube 视频
 
     官方参考: cppreference.com
 
