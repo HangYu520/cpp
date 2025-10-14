@@ -11,61 +11,63 @@
 */
 
 #include <iostream>
+#include <array>
 
-class DynamicArray
+template <typename T, size_t N> // 自定义数组模板
+struct Array 
 {
-public:
-    int *array;
-    
-    int arraySize, item;
+    T _array[N];
 
-public:
-    DynamicArray(int size)
+    T& operator[](size_t index) // 重载下标运算符
     {
-        item = 0;
-        arraySize = size;
-        array = new int[size];
+        return _array[index];
     }
 
-    ~DynamicArray()
+    T size() const // 返回数组大小
     {
-        delete[] array; // 释放内存
+        return N;
     }
 
-    void append(int value)
+    T* begin() // 返回数组首地址
     {
-        if (item > arraySize - 1)
-        {
-            arraySize *= 2;
-            int *newarray = new int[arraySize];
-
-            for (int i = 0; i < item; i++)
-            {
-                newarray[i] = array[i];
-            }
-            
-            delete[] array;
-            array = newarray;
-        }
-        array[item++] = value;
+        return &_array[0];
     }
 
-    void print()
+    T* end() // 返回数组尾地址
     {
-        for (int i = 0; i < item; i++)
-        {
-            std::cout << array[i] << " ";
-        }
-        std::cout << std::endl;
+        return &_array[N];
     }
+
 };
+
+void printArray(const int* array, size_t size)
+{
+    for (size_t i = 0; i < size; i++)
+    {
+        std::cout << array[i] << " ";
+    }
+    std::cout << std::endl;
+}
 
 int main()
 {
-    DynamicArray Array(3);
-    Array.append(1);
-    Array.append(2);
-    Array.append(3);
-    Array.append(4);
-    Array.print();
+    int stackArray[5] = {1, 2, 3, 4, 5}; // 栈中定义的数组
+    int *heapArray = new int[5] {1, 2, 3, 4, 5}; // 堆中分配的数组
+    std::cout << "Stack Array: ";
+    printArray(stackArray, 5);
+    std::cout << "Heap Array: ";
+    printArray(heapArray, 5);
+    delete[] heapArray;
+
+    std::cout << "-------------------------" << std::endl;
+
+    Array<int, 5> array;
+    std::cout << "Array before assignment: ";
+    printArray(array.begin(), array.size());
+    for (size_t i = 0; i < array.size(); i++)
+    {
+        array[i] = i + 1;
+    }
+    std::cout << "Array after assignment: ";
+    printArray(array.begin(), array.size());
 }
