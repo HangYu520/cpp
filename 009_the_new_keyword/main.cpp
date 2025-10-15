@@ -18,7 +18,7 @@
       new 创建对象, malloc 创建内存, 不会调用构造函数
       new 是 C++ 运算符，拥有 C++ 特性，如重载
 
-    - ::operator new 和 ::operator delete
+    - ::operator new 和 ::operator delete // ! 注意
       ::operator new 只创建内存，不调用构造函数
       new 关键字的逻辑: 先分配内存 (::operator new)，再调用构造函数
       ::operator delete 只释放内存，不调用析构函数
