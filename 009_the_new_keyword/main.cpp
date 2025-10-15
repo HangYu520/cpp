@@ -25,6 +25,12 @@
       delete 关键字的逻辑: 先调用析构函数，再释放内存 (::operator delete)
       它们和 malloc, free 的区别: ::operator 封装了异常处理，并且允许重载
 
+      ! new
+      ! {
+      !     operator new; 分配内存
+      !     placement new; 创建对象
+      ! }
+
     - 为什么需要重载 new/delete 运算符
       在实时性要求高的应用中，尽量优化堆分配从而进行有效的内存管理
       这时候重载 new 运算符，可以追踪、控制对象创建和销毁的时机，从而达到有效的内存管理
