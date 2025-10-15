@@ -18,9 +18,18 @@
       new 创建对象, malloc 创建内存, 不会调用构造函数
       new 是 C++ 运算符，拥有 C++ 特性，如重载
 
+    - ::operator new 和 ::operator delete
+      ::operator new 只创建内存，不调用构造函数
+      new 关键字的逻辑: 先分配内存 (::operator new)，再调用构造函数
+      ::operator delete 只释放内存，不调用析构函数
+      delete 关键字的逻辑: 先调用析构函数，再释放内存 (::operator delete)
+      它们和 malloc, free 的区别: ::operator 封装了异常处理，并且允许重载
+
     - 为什么需要重载 new/delete 运算符
       在实时性要求高的应用中，尽量优化堆分配从而进行有效的内存管理
       这时候重载 new 运算符，可以追踪、控制对象创建和销毁的时机，从而达到有效的内存管理
+      注意这里重载的是 ::operator new 和 ::operator delete，并不需要调用构造函数
+      同理， ::operator new[]  和 ::operator delete [] 也可以重载，是专门处理数组的
 
     内存管理是 C++ 的一个重要特性，也是为什么写 C++ 的一个主要原因 ！
 */
@@ -41,13 +50,13 @@ static void print_meomory()
     std::cout << "Meomory Usage : " << MeomoryAllocator::Allocatebytes - MeomoryAllocator::Freebytes << std::endl;
 }
 
-void* operator new(size_t size) // 重载 new 运算符
+void* operator new(size_t size) // 重载 ::operator new 运算符
 {
     MeomoryAllocator::Allocatebytes += size;
     return malloc(size);
 }
 
-void operator delete(void* memory) noexcept // 重载 delete 运算符
+void operator delete(void* memory) noexcept // 重载 ::operator delete 运算符
 {
     MeomoryAllocator::Freebytes += sizeof(memory);
     free(memory);
